@@ -27,7 +27,12 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 479px) {
+        width: auto;
+        height: auto;
+    }
+
+    @media screen and (min-width: 480px) {
         width: 450px;
         height: 609px;
     }
