@@ -1,0 +1,40 @@
+.action__section {
+    padding-top: 0;
+
+    @media screen and (max-width: 1119px) {
+        display: none;
+    }
+}
+
+.action__list {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+
+.action__item {
+    position: relative;
+    flex-basis: calc((100% - 30px * 2) / 3);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.action__overlay {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    background: rgba(47, 48, 58, 0.8);
+
+    font-weight: 700;
+    line-height: calc(16/14);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+}

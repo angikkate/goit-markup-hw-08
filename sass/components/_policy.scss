@@ -1,0 +1,54 @@
+.policy-input {
+    appearance: none;
+}
+
+.policy-icon .unchecked {
+    opacity: 1;
+    cursor: pointer;
+
+    transition: var(--trns-time);
+}
+
+.policy-input:checked+.policy-icon .unchecked {
+    opacity: 0;
+}
+
+.policy-icon .checked {
+    opacity: 0;
+    cursor: pointer;
+
+    transition: var(--trns-time);
+}
+
+.policy-input:checked+.policy-icon .checked {
+    opacity: 1;
+}
+
+.policy-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: calc(14/12);
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: calc(24/14);
+    }
+    
+}
+
+.policy-label {
+    margin-left: 7px;
+}
+
+.policy-link {
+    line-height: calc(24/14);
+    text-decoration-line: underline;
+    color: var(--accent-color);
+}
